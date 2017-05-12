@@ -12,7 +12,7 @@ function sum(a,b){ //eslint-disable-line
   return [mySum, myMsg];
 }
 
-sum();
+sum(4, 7);
 
 // Here is the test for sum(); uncomment it to run it
 //testSum(4, 7);
@@ -27,7 +27,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
-
+var multiply = 3 * 7;
 }
 
 // Here is the test for multiply(); uncomment it to run it
