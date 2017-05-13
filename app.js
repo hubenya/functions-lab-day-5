@@ -103,6 +103,6 @@ function multiplyArray(testArray){ //eslint-disable-line
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
 
-    Contact GitHub API Training Shop Blog About
+  / Contact GitHub API Training Shop Blog About
 
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help
+     2017 GitHub, Inc. Terms Privacy Security Status Help
