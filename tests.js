@@ -39,7 +39,3 @@ function testMultiplyArray() { //eslint-disable-line
     console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
   }
 }
-
-    Contact GitHub API Training Shop Blog About
-
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help

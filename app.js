@@ -8,14 +8,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a,b){ //eslint-disable-line
   var mySum = a + b;
-  var myMsg = "The sum of ' + a + ' and ' + b + ' is ' + mySum + '.";
+  var myMsg = 'The sum of ' + a + ' and ' + b + ' is ' + mySum + '.';
   return [mySum, myMsg];
 }
 
 sum(4,7);
 
 // Here is the test for sum(); uncomment it to run it
-//testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -38,7 +38,7 @@ multiply(5,9);
 
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -54,15 +54,16 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a,b,c){ //eslint-disable-line
   var mySum = sum(sum(a,b)[0], c)[0];
   var myMulti = multiply(multiply(a,b)[0], c)[0];
-  var myMsg1 =  a + ' and ' + b + ' sum to ' + mySum + '.';
-  var myMsg2 =  'The product of '  + a + ' and ' + b + ' and ' + c + ' is ' + myMulti + '.';
-return [mySum, myMsg1, myMulti, myMsg2];
+  var myMsg1 =  a + ' and ' + b +  ' and ' + c + ' sum to ' + mySum + '.';
+  var myMsg2 =  'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + myMulti + '.';
+  return [mySum, myMulti, myMsg1, myMsg2];
 
 }
-sumAndMultiply(4, 7, 5)
+
+sumAndMultiply(4,7,5);
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -79,7 +80,7 @@ var testArray = [2,3,4]; //eslint-disable-line
 function sumArray(testArray){ //eslint-disable-line
 
 }
-
+sumArray(2,3,4);
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
@@ -102,7 +103,3 @@ function multiplyArray(testArray){ //eslint-disable-line
 // testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
-
-  / Contact GitHub API Training Shop Blog About
-
-     2017 GitHub, Inc. Terms Privacy Security Status Help
