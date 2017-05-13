@@ -8,11 +8,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a,b){ //eslint-disable-line
   var mySum = a + b;
-  var myMsg = 'The sum of ' + a + ' and ' + b + ' is ' + mySum + '.';
+  var myMsg = "The sum of ' + a + ' and ' + b + ' is ' + mySum + '.";
   return [mySum, myMsg];
 }
 
-sum(4, 7);
+sum(4,7);
 
 // Here is the test for sum(); uncomment it to run it
 //testSum(4, 7);
@@ -26,12 +26,16 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+
 function multiply(a,b){ //eslint-disable-line
   var myMultiply = a * b;
-  return (myMultiply);
+  var myMsg = 'The product of ' + a + ' and ' + b + ' is ' + myMultiply + '.';
+  return [myMultiply, myMsg];
 }
 
+// Here is the test for multiply(); uncomment it to run it
 multiply(5,9);
+
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -48,8 +52,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+  var mySum = sum(sum(a,b)[0], c)[0];
+  var myMulti = multiply(multiply(a,b)[0], c)[0];
+  var myMsg1 =  a + ' and ' + b + ' sum to ' + mySum + '.';
+  var myMsg2 =  'The product of '  + a + ' and ' + b + ' and ' + c + ' is ' + myMulti + '.';
+return [mySum, myMsg1, myMulti, myMsg2];
 
 }
+sumAndMultiply(4, 7, 5)
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
