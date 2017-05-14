@@ -101,13 +101,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 //function multiplyArray(testArray){ //eslint-disable-line
 
-multiplyArray(testArray){ //eslint-disable-line
-  var multiplyArray = multiply(multiply(a,b)[0], c)[0];
-  var mySumMsg =  'The numbers ' + a + ',' + b + ',' + c + ' have a product of ' + multiplyArray + '.';
-  return mySumMsg;
-//'The numbers 2,3,4 have a product of 24.'
+function multiplyArray(testArray) {
+  var multiArray1 = multiply(testArray[0], testArray[1])[0];
+  var multiArray2 = multiply(multiArray1, testArray[2])[0];
+  var mymultiMsg =  'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + multiArray2 + '.';
+  return [multiArray2, mymultiMsg];
 }
-multiplyArray(2,3,4);
+multiplyArray(testArray);
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(2,3,4);
